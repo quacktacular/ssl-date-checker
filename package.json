@@ -1,6 +1,6 @@
 {
   "name": "ssl-date-checker-plus",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Library to check and report on SSL certificate info.",
   "main": "index.js",
   "scripts": {
