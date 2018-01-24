@@ -1,7 +1,7 @@
 {
-  "name": "ssl-date-checker",
-  "version": "1.0.1",
-  "description": "Library to check and report on the start and expiration date of a given SSL certificate for a given domain.",
+  "name": "ssl-date-checker-plus",
+  "version": "1.0.2",
+  "description": "Library to check and report on the start and expiration date of a given SSL certificate for a given domain. Also grabs issuer and covered names. Branch from Ray Hammond's project.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --no-colors --recursive test"
@@ -14,13 +14,13 @@
     "Secure Sockey Layer",
     "TLS"
   ],
-  "author": "Ray Hammond <ray.hammond77@gmail.com> (https://geeksretreat.wordpress.com/)",
+  "author": "Brendan DeBrincat <brendan@quacktacular.net>",
   "license": "MIT",
   "preferGlobal": true,
   "bin": {
     "ssl-date-checker": "index.js"
   },
-  "repository": "https://github.com/rheh/ssl-date-checker",
+  "repository": "https://github.com/quacktacular/ssl-date-checker",
   "devDependencies": {
     "chai": "^2.1.2",
     "jshint": "^2.8.0",
