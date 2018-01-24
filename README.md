@@ -1,41 +1,37 @@
-# ssl-date-checker v1.0.0
+# ssl-date-checker-plus v1.0.4
 
-[![Build Status](https://travis-ci.org/rheh/ssl-date-checker.svg?branch=master)](https://travis-ci.org/rheh/ssl-date-checker)
-
-Nodejs Library to check and report on the issues on and expiration date of a given SSL certificate for a given domain.
+Nodejs Library to check and report on the issues on and expiration date of a given SSL certificate for a given domain. Also reports issuer info and covered domains (only for JSON currently).  
 
 Usage:
 
-$ ssl-date-checker host [-f text|json] [-p port]
+$ ssl-date-checker-plus host [-f text|json] [-p port]
 
 Example results:
 
-$ ssl-date-checker npm.org
+$ ssl-date-checker-plus npm.org
 
 Certification for npm.org
 Issue On: Dec 13 00:51:56 2014 GMT
 Expires On: Jan 13 11:24:29 2017 GMT
 Expires in 536 days
 
-$ ssl-date-checker npm.org -f json
+$ ssl-date-checker-plus npm.org -f json
 
 Example results:
 
 {
-    "valid_from": "Oct 15 09:57:00 2014 GMT",
-    "valid_to": "Oct 16 09:57:00 2015 GMT",
-    "expires": 69,
+    "valid_from": "Oct 31 00:00:00 2016 GMT",
+    "valid_to": "Oct 31 23:59:59 2018 GMT",
+    "issuer_cn": "Symantec Class 3 EV SSL CA - G3",
+    "valid_hosts": "DNS:www.apple.com, DNS:images.apple.com, DNS:trailers.apple.com, DNS:ssl.apple.com, DNS:apple.com, DNS:rebate.apple.com, DNS:helposx.apple.com, DNS:help.apple.com, DNS:helpqt.apple.com, DNS:documentation.apple.com",
+    "expires": 280,
     "expired": false,
-    "host": "iptorrents.com"
+    "host": "apple.com"
 }
 
 ## Installing
 
-npm install ssl-date-checker
-
-## Contributors
-
-One-man-band at the moment.  Contact me at twitter on @rayhammond, or, via my blog here http://geeksretreat.wordpress.com if you are interest in getting involved.
+npm install ssl-date-checker-plus
 
 ## License
 

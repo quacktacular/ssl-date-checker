@@ -58,7 +58,7 @@ Checker.prototype.check = function (callback) {
         var dateInfo = {
             valid_from: certificateInfo.valid_from,
             valid_to: certificateInfo.valid_to,
-            issuer_o: certificateInfo.issuer.CN,
+            issuer_o: certificateInfo.issuer.o,
             issuer_cn: certificateInfo.issuer.CN,
             valid_hosts: certificateInfo.subjectaltname
         };

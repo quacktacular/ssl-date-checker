@@ -1,7 +1,7 @@
 {
   "name": "ssl-date-checker-plus",
-  "version": "1.0.3",
-  "description": "Library to check and report on the start and expiration date of a given SSL certificate for a given domain. Also grabs issuer and covered names. Branch from Ray Hammond's project.",
+  "version": "1.0.4",
+  "description": "Library to check and report on SSL certificate info.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --no-colors --recursive test"
